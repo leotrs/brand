@@ -4,22 +4,6 @@ This repository contains all official brand assets for the Aris ecosystem. All A
 projects should include this repository as a git submodule to ensure consistent
 branding.
 
-## Repository Structure
-
-```
-brand/
-├── logos/
-│   ├── aris/           # Main Aris brand logos
-│   ├── studio/         # RSM Studio logos and favicons
-│   ├── press/          # Preview Press logos
-│   ├── forum/          # Aris Forum logos
-│   └── rsm/            # RSM Python package logos
-├── design-system/
-│   ├── css/            # Design system CSS variables
-│   └── README.md       # Design system documentation
-├── colors/             # Color palette definitions (future)
-└── typography/         # Typography specifications (future)
-```
 
 ## Logo Variants
 
@@ -53,9 +37,6 @@ When exporting new logos from Figma, use these specifications for consistency:
 4. Naming convention: `{product}-{variant}-{size}.svg`
    - Examples: `aris-logo-64.svg`, `studio-logotype-256.svg`
 
-## Design System
-
-The `design-system/` directory contains CSS variables and design tokens used across Aris products. See `design-system/README.md` for details.
 
 ## Guidelines
 
@@ -66,12 +47,22 @@ The `design-system/` directory contains CSS variables and design tokens used acr
 - Use appropriate variants for different contexts
 - Follow spacing and clear space guidelines
 
+### Horizontal logos
+
+The horizontal logos (`[mark] type`) can be either used as a SVG that contains both the
+mark and the type OR as two elements: the mark as an SVG element and the type as a
+normal text element. In the latter case, the font face must be set to `Georgia`, and the
+gap between the two elements must be `0.25em`. If the font size is 64px, the mark must
+be a square of `48px` side, centered vertically (not at the type baseline). These
+proportions must always be kept when resizing the elements.
+
 ### Color Palette
 - **Aris**: Slate gray (#6B7280)
 - **Studio**: Blue (#3B82F6)
 - **Press**: Red/Coral (#EF4444)
 - **Forum**: Purple (#A855F7)
 - **RSM**: (see rsm/logo.svg for current colors)
+
 
 ## Contributing
 
@@ -83,6 +74,8 @@ To update brand assets:
 4. Commit with descriptive message
 5. All projects using this submodule will need to update their submodule reference
 
+
 ## License
 
-All brand assets are proprietary to the Aris project. Use only for official Aris products and communications.
+All brand assets are proprietary to the Aris project. Use only for official Aris
+products and communications, or with explicit permission.
