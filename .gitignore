@@ -32,3 +32,4 @@ Temporary Items
 # Build artifacts
 dist/
 build/
+.claude/skills
